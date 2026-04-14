@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon Tech Solutions - EPES Dashboard</title>
+    <link rel="stylesheet" href="STYLES/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-logo-title">
+            <img src="IMAGE/horizon-logo.png" alt="Horizon Logo">
+            <h1>Horizon Tech Solutions</h1>
+        </div>
+        <nav>
+            <a href="PAGES/After_Submit.html">Dashboard</a>
+            <a href="index.html">Input Metrics</a>
+            <a href="PAGES/After_Submit.html">Reports</a>
+            <a href="PAGES/Top_Performers.html">Top Performers</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Performance Dashboard</h2>
+        <div class="card-container">
+            <div class="card">Total Employees: 50</div>
+            <div class="card">Avg Performance Score: 87%</div>
+            <div class="card top-performer-card">Top Performer: Jane Doe</div>
+        </div>
+
+        <h2>Enter Performance Metrics</h2>
+        <div class="form-box">
+            <form action="PAGES/After_Submit.html">
+                <div class="form-group">
+                    <label for="empName">Employee Name:</label>
+                    <input type="text" id="empName" name="empName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="projCompletion">Project Completion Rate (%):</label>
+                    <input type="number" id="projCompletion" name="projCompletion" min="0" max="100" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="custSat">Customer Satisfaction (1-10):</label>
+                    <select id="custSat" name="custSat" required>
+                        <option value="">Select</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="teamCollab">Team Collaboration (1-10):</label>
+                    <select id="teamCollab" name="teamCollab" required>
+                        <option value="">Select</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2025 Horizon Tech Solutions
+    </footer>
+</body>
+</html>
